@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+.textLayer {
+    position: absolute;
+    text-align: initial;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    line-height: 1;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+    forced-color-adjust: none;
+    transform-origin: 0 0;
+    z-index: 2;
+}
+
+.textLayer :is(span,br) {
+    color: transparent;
+    position: absolute;
+    white-space: pre;
+    cursor: text;
+    margin: 0;
+    transform-origin: 0 0;
+}
